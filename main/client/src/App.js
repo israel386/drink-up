@@ -1,5 +1,8 @@
 import React from 'react'
-import TitlePage from './components/TitlePage/TitlePage'
+import TitlePage from './pages/TitlePage'
+// import Nav from './components/NavBar/Nav'
+import Home from './pages/Home';
+// import Home from './pages/Home';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 
@@ -40,7 +43,8 @@ const App = () => {
   return (
     <>
     <ThemeProvider theme={theme}>
-    <TitlePage/>
+      {/* <TitlePage/> */}
+      <Home/>
     </ThemeProvider>
     </>
   )

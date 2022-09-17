@@ -41,11 +41,12 @@ const TitlePage = () => {
       justifyContent="center"
       alignItems="center"
       spacing={1}
-      style={{marginTop: 200}}>
+      style={{marginTop: 150}}>
+      {/* sx={{display: { xs: '', md: 'flex' },}} */}
       <Typography fontFamily='Lobster' variant="h1" >Drink Up</Typography>
-      <Typography style={{textAlign: 'center', padding: 5}}variant='h3'>An app to help you find and choose your next drink</Typography>
+      <Typography style={{textAlign: 'center', padding: 5}}variant='h4'>An app to help you find and choose your next drink</Typography>
       <div>
-      <Button sx={{ color: 'black', margin: 2}} color='primaryVar' variant='contained' onClick={handleClickOpen}>Login</Button>
+      <Button sx={{margin: 2}} color='primary' variant='outlined' onClick={handleClickOpen}>Login</Button>
       {/* ----LOGIN MODAL---- */}
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>Login</DialogTitle>
@@ -65,6 +66,7 @@ const TitlePage = () => {
             id="standard-password-input"
             label="Password"
             type="password"
+            fullWidth
             autoComplete="current-password"
             variant="standard"
           />
@@ -82,8 +84,7 @@ const TitlePage = () => {
         <DialogTitle>Sign up</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            To subscribe to this website, please enter your email address here. We
-            will send updates occasionally.
+            To make a profile, please enter your email address and make a password.
           </DialogContentText>
           <TextField
             autoFocus
@@ -97,10 +98,11 @@ const TitlePage = () => {
            <TextField
             autoFocus
             margin="dense"
-            id="name"
-            label="Email Address"
-            type="email"
+            id="standard-password-input"
+            label="Password"
+            type="password"
             fullWidth
+            autoComplete="current-password"
             variant="standard"
           />
         </DialogContent>
