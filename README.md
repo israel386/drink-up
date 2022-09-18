@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Drink-up
 
 A website that shows you what kind of alcholic drinks you can make.
@@ -46,3 +47,8 @@ Contact with Postmates or Total Wines were if the user needs alcohol or ingedien
 # GitHub:
 
 # Website:
+=======
+# drink-up
+
+# Description
+>>>>>>> ab164e209eafc0264b549926a97609db3522f2ad

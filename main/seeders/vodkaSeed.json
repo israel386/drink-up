@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Gimlet",
+        "description": "Gin, lime juice, simple syrup ",
+        "image": " "
+    },
+    {
+        "name": "Cosmopolitan ",
+        "description": "Vodka, 100% cranberry juice, lemon juice, Cointreau, simple syrup",
+        "image": " "
+    },
+    {
+        "name": "Vodka Sour",
+        "description": "Vodka, lemon juice, simple syrup, Angostura bitters, egg white",
+        "image": " "
+    },
+    {
+        "name": "White Russian",
+        "description": "Vodka, Kahlua, cream",
+        "image": " "
+    },
+    {
+        "name": "Collins",
+        "description": "Vodka, lemon juice, simple syrup, soda water",
+        "image": " "
+    }
+]
