@@ -18,6 +18,8 @@ This website was created so that the user can look for what kind of alcholic dri
 - Heroku
 - Apollo
 - Materialize ui
+- Javascript
+- HTML
 
 # Authors
 
