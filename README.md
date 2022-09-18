@@ -8,6 +8,9 @@ This website was created so that the user can look for what kind of alcholic dri
 
 # Technology Used
 
+- HTML
+- Javascript
+- CSS
 - Sequlie
 - React
 - GraphQl
