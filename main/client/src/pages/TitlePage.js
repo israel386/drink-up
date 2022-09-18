@@ -73,7 +73,7 @@ const TitlePage = () => {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Cancel</Button>
-          <Button onClick={handleClose}>Subscribe</Button>
+          <Button onClick={handleClose}>Log In</Button>
         </DialogActions>
       </Dialog>
       {/* ----LOGIN MODAL END---- */}
@@ -108,7 +108,7 @@ const TitlePage = () => {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose2}>Cancel</Button>
-          <Button onClick={handleClose2}>Subscribe</Button>
+          <Button onClick={handleClose2}>Sign Up</Button>
         </DialogActions>
       </Dialog>
       {/* ----SIGN UP MODAL END---- */}

@@ -2,7 +2,7 @@ import React from 'react'
 import TitlePage from './pages/TitlePage'
 // import Nav from './components/NavBar/Nav'
 import Home from './pages/Home';
-// import Home from './pages/Home';
+import drinkCard from './components/Card/Card';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 

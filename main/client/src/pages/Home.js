@@ -4,7 +4,9 @@ import React from "react";
 // import Cart from "../components/Cart";
 import Nav from "../components/NavBar/Nav"
 import Categories from "../components/Categories/Categories";
-import Carousel from "../components/Carousel/Carousel";
+import Carousel from "../components/Body/Body";
+import Body from "../components/Body/Body";
+import DrinkCard from "../components/Card/Card";
 
 const Home = () => {
   return (
@@ -13,7 +15,9 @@ const Home = () => {
       <br/>
       <Categories/>
       <br/>
-      <Carousel/>
+      {/* <Body/> */}
+      <br/>
+      <DrinkCard/>
     </div>
     
   );
