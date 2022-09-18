@@ -21,11 +21,11 @@ This website was created so that the user can look for what kind of alcholic dri
 
 # Authors
 
-Israel De La Rosa
-Moises Cardenas
-Marie Wildana Baptiste
-James O'Brien
-Mateo
+- Israel De La Rosa
+- Moises Cardenas
+- Marie Wildana Baptiste
+- James O'Brien
+- Mateo
 
 # Future Developmet
 
