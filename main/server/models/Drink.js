@@ -20,7 +20,7 @@ const drinkschema = new Schema({
   },
   category: {
     type: Schema.Types.ObjectId,
-    ref: 'Category',
+    ref: 'Alcohol',
     required: true
   }
 });
