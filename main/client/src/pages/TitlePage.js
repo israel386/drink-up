@@ -1,5 +1,6 @@
 import React  from 'react';
 import { useState } from 'react';
+import {useNavigate} from 'react-router-dom'
 import { Button, Grid, Typography } from '@mui/material'
 // import { Box, Stack } from '@mui/system';
 import TextField from '@mui/material/TextField';
@@ -58,6 +59,14 @@ const TitlePage = () => {
     setOpen2(false);
   };
 
+  // ---ROUTING---
+  const navigate = useNavigate();
+
+  const navigateHome = () => {
+    // 👇️ navigate to /
+    navigate('/');
+  };
+
   return (
     <Grid
       container
@@ -103,7 +112,7 @@ const TitlePage = () => {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Cancel</Button>
-          <Button type='submit'>Log In</Button>
+          <Button  onClick={navigateHome} type='submit'>Log In</Button>
         </DialogActions>
       </Dialog>
       {/* ----LOGIN MODAL END---- */}
@@ -137,7 +146,7 @@ const TitlePage = () => {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose2}>Cancel</Button>
-          <Button onClick={handleClose2}>Sign Up</Button>
+          <Button onClick={navigateHome}>Sign Up</Button>
         </DialogActions>
       </Dialog>
       {/* ----SIGN UP MODAL END---- */}
@@ -145,5 +154,6 @@ const TitlePage = () => {
     </Grid>
   );
 }
+
 
 export default TitlePage;
