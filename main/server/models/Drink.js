@@ -11,10 +11,18 @@ const drinkschema = new Schema({
   },
   ingredients: {
     type: String,
-    required: 'You need to leave a thought!',
+    required: 'You need to add the ingredients',
     minlength: 1,
     maxlength: 280
   },
+  image: {
+    type: String
+  },
+  category: {
+    type: Schema.Types.ObjectId,
+    ref: 'Category',
+    required: true
+  }
 });
 
 const Drinks = mongoose.model('Drinks', drinkschema);
