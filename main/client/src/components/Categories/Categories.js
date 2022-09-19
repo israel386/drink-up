@@ -2,7 +2,7 @@ import React from 'react'
 import {Grid, Button} from '@mui/material'
 
 
-const categories = ["Rum", "Tequila","Vodka",];
+const categories = ["Rum", "Tequila", "Vodka",];
 
 const Categories = () => {
   return (

@@ -1,4 +1,4 @@
-import React  from 'react'
+import React  from 'react';
 import { useState } from 'react';
 import { Button, Grid, Typography } from '@mui/material'
 // import { Box, Stack } from '@mui/system';
@@ -14,7 +14,31 @@ import DialogTitle from '@mui/material/DialogTitle';
 
 
 const TitlePage = () => {
+  // LOGIN----------
+  // -----LOGIN VALUES
+  const [value, setValues] = useState({
+    email: "",
+    password:"",
+  })
+  // ------CHANGE LOGIN VALUES
+  const handleEmailInputChange = (event) => {
+    setValues({...setValues, email: event.target.value})
+  }
 
+  const handlePasswordInputChange = (event) => {
+    setValues({...setValues, password: event.target.value})
+  }
+  // SUBMIT ALERT
+  // const [submitted, setSubmitted] = useState(false)
+
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   setSubmitted(true)
+  // }
+  // ----onSubmit={handleSubmit}----
+  // LOGIN END----------
+
+  // ---- OPEN=LOGIN & OPEN2=SIGNUP----
   const [open,setOpen] = useState(false);
   const [open2,setOpen2] = useState(false);
   
@@ -49,7 +73,8 @@ const TitlePage = () => {
       <Button sx={{margin: 2}} color='primary' variant='outlined' onClick={handleClickOpen}>Login</Button>
       {/* ----LOGIN MODAL---- */}
       <Dialog open={open} onClose={handleClose}>
-        <DialogTitle>Login</DialogTitle>
+      {/* {submitted ? <Typography color='secondary' className='success-message'>Successfully logged in</Typography> : null} */}
+        <DialogTitle>Login </DialogTitle>
         <DialogContent>
           <TextField
             autoFocus
@@ -57,23 +82,28 @@ const TitlePage = () => {
             id="name"
             label="Email Address"
             type="email"
+            value={value.email}
+            onChange={handleEmailInputChange}
             fullWidth
             variant="standard"
           />
+          <Typography color='error' variant='inherit' component='span'>Please Enter Email</Typography>
           <TextField
             autoFocus
             margin="dense"
             id="standard-password-input"
             label="Password"
             type="password"
+            value={value.password}
+            onChange={handlePasswordInputChange}
             fullWidth
-            autoComplete="current-password"
             variant="standard"
-          />
+           />
+          {/* {submitted & !value.password ? <Typography color='error' variant='inherit' component='span'>Please Enter Password</Typography> : null} */}
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Cancel</Button>
-          <Button onClick={handleClose}>Log In</Button>
+          <Button type='submit'>Log In</Button>
         </DialogActions>
       </Dialog>
       {/* ----LOGIN MODAL END---- */}
@@ -102,7 +132,6 @@ const TitlePage = () => {
             label="Password"
             type="password"
             fullWidth
-            autoComplete="current-password"
             variant="standard"
           />
         </DialogContent>
@@ -117,4 +146,4 @@ const TitlePage = () => {
   );
 }
 
-export default TitlePage
+export default TitlePage;

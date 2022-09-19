@@ -1,9 +1,8 @@
 import React from 'react'
 import TitlePage from './pages/TitlePage'
-// import Nav from './components/NavBar/Nav'
 import Home from './pages/Home';
-import drinkCard from './components/Card/Card';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 
 
 const theme = createTheme({
@@ -20,6 +19,9 @@ const theme = createTheme({
     secondaryVar: {
       main: '#3a86ff',
     },
+    error: {
+      main: "#e63946"
+    }
   },
   typography: {
     fontFamily: [
@@ -41,12 +43,16 @@ const theme = createTheme({
 
 const App = () => {
   return (
-    <>
     <ThemeProvider theme={theme}>
-      {/* <TitlePage/> */}
-      <Home/>
+      <Router>
+        <>
+         <Routes>
+            <Route exact path='/login' element={<TitlePage/>}/>
+            <Route exact path='/' element={<Home/>}/>
+          </Routes>
+        </>
+      </Router>
     </ThemeProvider>
-    </>
   )
 }
 

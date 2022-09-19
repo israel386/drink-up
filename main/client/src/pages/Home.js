@@ -4,8 +4,8 @@ import React from "react";
 // import Cart from "../components/Cart";
 import Nav from "../components/NavBar/Nav"
 import Categories from "../components/Categories/Categories";
-import Carousel from "../components/Body/Body";
-import Body from "../components/Body/Body";
+import Carousel from "../components/Carousel/Body";
+import Body from "../components/Carousel/Body";
 import DrinkCard from "../components/Card/Card";
 
 const Home = () => {
