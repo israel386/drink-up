@@ -1,41 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
-
 :root {
-  --color-bg: rgb(22, 22, 22);
-  --color-bg-variant: #3a3e4d ;
-  --color-primary: #ff908d;
-  --color-primary-variant: #ff0f09;
-  --color-white: rgb(217, 217, 217);
-  --color-light: rgb(189, 187, 187);
-
-  --container-width-lg: 75%;
-  --container-width-md: 86%;
-  --container-width-sm: 90%;
-
-  --transition: all 400ms ease;
-  /* --transition-icon: all 2s ease-in-out; */
+  --primary: #232F3E;
+  --secondary: #F3A847;
+  --tertiary: #B12704;
+  --light: #fafafa;
+  --dark: #272f32;
+  --error: rgb(228, 46, 1);
+  --spacing-one: calc(1rem * 0.5);
+  --spacing-two: calc(1rem);
 }
 
 * {
   box-sizing: border-box;
 }
-html{ 
-  scroll-behavior: smooth;
-}
-
-::-webkit-scrollbar {
-  display:none;
-  
-}
 
 html,
 body {
   min-height: 100%;
-  background-color: var(--color-bg);
-    color: var(--color-white);
 }
 
-/* body {
+body {
   margin: 0;
   padding: 0;
   font-family: 'Karla', sans-serif;
@@ -223,5 +206,5 @@ input:focus {
 @media screen and (max-width: 768px) {
   .card {
     width: 100%;
-  } */
-/* } */
+  }
+}
