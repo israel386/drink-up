@@ -5,7 +5,7 @@ import React from "react";
 import Nav from "../components/NavBar/Nav"
 import Categories from "../components/Categories/Categories";
 import DrinkCard from "../components/Card/Card"
-import ProductItem from "../components";
+// import ProductItem from "../components";
 
 
 const Home = () => {
