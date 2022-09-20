@@ -1,7 +1,7 @@
 // import React from 'react'
 // import TitlePage from './pages/TitlePage'
 // import Home from './pages/Home';
-// import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 // import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -25,41 +25,41 @@ import OrderHistory from './pages/OrderHistory';
 
 
 // MOISES BRANCH CODE-----------
-// const theme = createTheme({
-//   palette: {
-//     primary: {
-//       main: '#ffbe0b',
-//     },
-//     primaryVar: {
-//       main: '#ff006e',
-//     },
-//     secondary: {
-//       main: '#8338ec',
-//     },
-//     secondaryVar: {
-//       main: '#3a86ff',
-//     },
-//     error: {
-//       main: "#e63946"
-//     }
-//   },
-//   typography: {
-//     fontFamily: [
-//       '-apple-system',
-//       'BlinkMacSystemFont',
-//       '"Segoe UI"',
-//       'Roboto',
-//       '"Helvetica Neue"',
-//       'Arial',
-//       'sans-serif',
-//       '"Apple Color Emoji"',
-//       '"Segoe UI Emoji"',
-//       '"Segoe UI Symbol"',
-//       'Lobster',
-//       'cursive'
-//     ].join(','),
-//   },
-// });
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#ffbe0b',
+    },
+    primaryVar: {
+      main: '#ff006e',
+    },
+    secondary: {
+      main: '#8338ec',
+    },
+    secondaryVar: {
+      main: '#3a86ff',
+    },
+    error: {
+      main: "#e63946"
+    }
+  },
+  typography: {
+    fontFamily: [
+      '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+      'Lobster',
+      'cursive'
+    ].join(','),
+  },
+});
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -95,10 +95,11 @@ function App() {
   //   </ThemeProvider>
   // )
     <ApolloProvider client={client}>
+      <ThemeProvider theme={theme}>
       <Router>
         <div>
           <StoreProvider>
-            <Nav />
+            {/* <Nav /> */}
             <Routes>
               <Route 
                 path="/" 
@@ -132,6 +133,7 @@ function App() {
           </StoreProvider>
         </div>
       </Router>
+      </ThemeProvider>
     </ApolloProvider>
   );
 }

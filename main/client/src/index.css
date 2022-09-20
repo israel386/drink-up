@@ -1,4 +1,6 @@
 :root {
+  --color-bg: rgb(22, 22, 22);
+  --color-white: rgb(217, 217, 217);
   --primary: #232F3E;
   --secondary: #F3A847;
   --tertiary: #B12704;
@@ -13,9 +15,15 @@
   box-sizing: border-box;
 }
 
+html{ 
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   min-height: 100%;
+  background-color: var(--color-bg);
+  color: var(--color-white);
 }
 
 body {
