@@ -8,12 +8,18 @@ import Favorite from '@mui/icons-material/Favorite';
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 
-const drinks = ["Mexican Mule","Margarita", "Old Fashion"];
+const tequilaDrinks = [
+  { name: "Mexican Mule", description: "cocktail containing vodka, tomato juice, and other spices and flavorings."},
+  "Bloody Maria", 
+  "Paloma", 
+  "Tequila Sour", 
+  "Tequila Sunrise"
+];
 
 
 // const cardLayout = () => {
 //     return (
-//       <Card sx={{ maxWidth: 345 }}>
+//       <Card sx={{ maxWidth: 345minHeight:390, minWidth:345 }}>
 //         <CardMedia
 //         component="img"
 //         height="200"
@@ -42,21 +48,20 @@ const DrinkCard = () => {
   return (
     <Grid container spacing={2} justifyContent="center" alignItems="center">
       <Grid item>
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345, minHeight:390, minWidth:345, maxHeight:390}}>
           <CardMedia
           component="img"
           height="200"
           image="./images/tequila_images/mexicanMule.png"
-          alt="mexicanMule"
+          alt="Mexican Mule"
           />
           <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            {drinks[0]}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over 6,000
-              species, ranging across all continents except Antarctica
-          </Typography>
+            <Typography gutterBottom variant="h5" component="div">
+              {tequilaDrinks[0].name}
+            </Typography>
+            <Typography variant="body2" color="text.secondary" component="p">
+            {tequilaDrinks[0].description}
+            </Typography>
           </CardContent>
           <CardActions>
             <Checkbox {...label} icon={<FavoriteBorder />} checkedIcon={<Favorite />} />
@@ -66,7 +71,7 @@ const DrinkCard = () => {
       </Grid>
 
       <Grid item>
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345, minHeight:390, minWidth:345 }}>
           <CardMedia
           component="img"
           height="200"
@@ -75,7 +80,7 @@ const DrinkCard = () => {
           />
           <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            {drinks[0]}
+            {tequilaDrinks[1]}
           </Typography>
           <Typography variant="body2" color="text.secondary">
               Lizards are a widespread group of squamate reptiles, with over 6,000
@@ -90,7 +95,7 @@ const DrinkCard = () => {
       </Grid>
 
       <Grid item>
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345,minHeight:390, minWidth:345 }}>
           <CardMedia
           component="img"
           height="200"
@@ -99,7 +104,7 @@ const DrinkCard = () => {
           />
           <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            {drinks[0]}
+            {tequilaDrinks[2]}
           </Typography>
           <Typography variant="body2" color="text.secondary">
               Lizards are a widespread group of squamate reptiles, with over 6,000
@@ -114,16 +119,16 @@ const DrinkCard = () => {
       </Grid>
 
       <Grid item>
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345,minHeight:390, minWidth:345 }}>
           <CardMedia
           component="img"
           height="200"
           image="./images/tequila_images/TequilaSour.png"
           alt="Tequila Sour"
-          />
+          /> 
           <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            {drinks[0]}
+            {tequilaDrinks[3]}
           </Typography>
           <Typography variant="body2" color="text.secondary">
               Lizards are a widespread group of squamate reptiles, with over 6,000
@@ -138,16 +143,16 @@ const DrinkCard = () => {
       </Grid>
 
       <Grid item>
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345,minHeight:390, minWidth:345 }}>
           <CardMedia
           component="img"
           height="200"
-          image="./images/tequila_images/TequilaSunrise.png"
+          image="./images/tequila_images/tequilaSunrise.png"
           alt="Tequila Sunrise"
           />
           <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            {drinks[0]}
+            {tequilaDrinks[4]}
           </Typography>
           <Typography variant="body2" color="text.secondary">
               Lizards are a widespread group of squamate reptiles, with over 6,000
@@ -160,8 +165,6 @@ const DrinkCard = () => {
           </CardActions>
         </Card>
       </Grid>
-
-      
     </Grid>
     
   );

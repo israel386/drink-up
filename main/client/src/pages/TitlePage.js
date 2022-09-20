@@ -96,7 +96,7 @@ const TitlePage = () => {
             fullWidth
             variant="standard"
           />
-          <Typography color='error' variant='inherit' component='span'>Please Enter Email</Typography>
+          {/* <Typography color='error' variant='inherit' component='span'>Please Enter Email</Typography> */}
           <TextField
             autoFocus
             margin="dense"
