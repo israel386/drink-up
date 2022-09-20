@@ -28,7 +28,7 @@ This website was created so that the user can look for what kind of alcholic dri
 - Moises Cardenas
 - Marie Wildana Baptiste
 - James O'Brien
-- Mateo
+- Mateo Mcpherson
 
 # Future Developmet
 
