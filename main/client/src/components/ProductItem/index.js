@@ -4,6 +4,11 @@ import { pluralize } from "../../utils/helpers"
 import { useStoreContext } from "../../utils/GlobalState";
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
+import { Grid, Button, Card, CardContent, CardActions, Typography, CardMedia } from '@mui/material'
+// import { Container } from '@mui/system';
+import Checkbox from '@mui/material/Checkbox';
+import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
+import Favorite from '@mui/icons-material/Favorite';
 
 function ProductItem(item) {
   const [state, dispatch] = useStoreContext();
@@ -40,16 +45,49 @@ function ProductItem(item) {
   }
 
   return (
-    <div className="card px-1 py-1">
-      <Link to={`/products/${_id}`}>
-        <img
+
+    <Grid container spacing={2} direction="row" justifyContent="center" alignItems="center">
+      <Grid item>
+        <Card sx={{ maxWidth: 345, minHeight:390, minWidth:345, maxHeight:390}}>
+          <CardMedia
+          component="img"
+          to={`/products/${_id}`}
+          height="200"
+          image={`/images/${image}`}
+          // src={`/images/${image}`}
           alt={name}
-          src={`/images/${image}`}
-        />
-        <p>{name}</p>
-      </Link>
-      <button onClick={addToCart}>Save Drink</button>
-    </div>
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              {name}
+            </Typography>
+            <Typography variant="body2" color="text.secondary" component="p">
+            DRINK DESCRIPTION
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Checkbox icon={<FavoriteBorder />} onClick={addToCart} checkedIcon={<Favorite />} />
+            <Button size="small">Learn More</Button>
+          </CardActions>
+        </Card>
+      </Grid>
+    </Grid>
+
+
+
+
+
+    
+    // <div className="card px-1 py-1">
+    //   <Link to={`/products/${_id}`}>
+    //     <img
+    //       alt={name}
+    //       src={`/images/${image}`}
+    //     />
+    //     <p>{name}</p>
+    //   </Link>
+    //   <button onClick={addToCart}>Save Drink</button>
+    // </div>
   );
 }
 

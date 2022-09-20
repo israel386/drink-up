@@ -7,6 +7,7 @@ import {
 } from '../../utils/actions';
 import { QUERY_CATEGORIES } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
+import {Grid, Button, Typography} from '@mui/material'
 
 function CategoryMenu() {
   const [state, dispatch] = useStoreContext();
@@ -42,19 +43,27 @@ function CategoryMenu() {
   };
 
   return (
-    <div>
-      <h2>Choose a Category:</h2>
-      {categories.map((item) => (
-        <button
-          key={item._id}
-          onClick={() => {
-            handleClick(item._id);
-          }}
-        >
-          {item.name}
-        </button>
-      ))}
-    </div>
+     <Grid container direction="row" justifyContent="center" alignItems="center">
+       <Typography>Choose a Category</Typography>
+            {/* ADDS WHATEVER YOU ADD INTO "CATERGORIES" ARRAY */}
+        {categories.map((item) => (
+        <Button variant="contained" color="secondaryVar" sx={{m:2}} key={item._id} onClick={() => {
+          handleClick(item._id);}} > {item.name} </Button>
+        ))}
+     </Grid>
+    // <div>
+    //   <h2>Choose a Category:</h2>
+    //   {categories.map((item) => (
+    //     <button
+          // key={item._id}
+          // onClick={() => {
+          //   handleClick(item._id);
+          // }}
+    //     >
+    //       {item.name}
+    //     </button>
+    //   ))}
+    // </div>
   );
 }
 
