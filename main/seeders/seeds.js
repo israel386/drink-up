@@ -1,6 +1,8 @@
 
 const userSeeds = require('./userSeed.json');
-const thoughtSeeds = require('./thoughtSeed.json');
+const thoughtSeeds = require('./tequliaSeed.json');
+const thoughtSeeds = require('./rumSeed.json');
+const thoughtSeeds = require('./vodkaSeed.json');
 const db = require('../config/connection');
 const { Thought, User } = require('../models');
 

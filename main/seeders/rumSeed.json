@@ -2,26 +2,26 @@
     {
         "name": "Classic Daiquiri",
         "description": "White rum, lime, simple syrup",
-        "image": " "
+        "image": "images/rum_images/Daiquiri.png  "
     },
     {
         "name": "Classic Mojito ",
         "description": "White rum, simple syrup, lime, mint, soda water",
-        "image": " "
+        "image": "images/rum_images/Mojito.png "
     },
     {
         "name": "Classic piña colada ",
         "description": "Aged rum, frozen pineapple, pineapple juice, lime juice, cream of coconut, ice",
-        "image": " "
+        "image": "images/rum_images/piña_colada.png  "
     },
     {
         "name": " Dark and Stormy cocktail",
         "description": "Dark rum, ginger beer, lime wedge",
-        "image": " "
+        "image": "images/rum_images/Dark_Stormy.png  "
     },
     {
         "name": "Hurricane Cocktail",
         "description": " Light rum, dark rum, passion fruit syrup, orange juice, lime juice, grenadine",
-        "image": " "
+        "image": "images/rum_images/Hurricane_Cocktail.png  "
     }
 ]
