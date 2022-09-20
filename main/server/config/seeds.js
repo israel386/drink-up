@@ -34,7 +34,7 @@ db.once('open', async () => {
       name: 'Classic Piña Colada',
       description:
         'Aged rum, frozen pineapple, pineapple juice, lime juice, cream of coconut, ice',
-      image: 'Piña_Colada.png',
+      image: 'Colada.png',
       category: categories[0]._id
     },
     {
