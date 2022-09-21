@@ -46,7 +46,7 @@ function ProductItem(item) {
 
   return (
 
-    <Grid container spacing={2} direction="row" justifyContent="center" alignItems="center">
+    
       <Grid item>
         <Card sx={{ maxWidth: 345, minHeight:390, minWidth:345, maxHeight:390}}>
           <CardMedia
@@ -71,7 +71,7 @@ function ProductItem(item) {
           </CardActions>
         </Card>
       </Grid>
-    </Grid>
+  
 
 
 

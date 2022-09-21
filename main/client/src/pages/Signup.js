@@ -17,6 +17,8 @@ function Signup(props) {
   // LOGIN LOGIC-----------------
   const [formState, setFormState] = useState({ email: '', password: '' });
   const [login, { error }] = useMutation(LOGIN);
+  
+  const navigate = useNavigate()
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
@@ -26,6 +28,7 @@ function Signup(props) {
       });
       const token = mutationResponse.data.login.token;
       Auth.login(token);
+      navigate('/');
     } catch (e) {
       console.log(e);
     }
@@ -142,7 +145,7 @@ function Signup(props) {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Cancel</Button>
-          <Button  type='submit'>Log In</Button>
+          <Button  onClick={handleFormSubmit} type='button'>Log In</Button>
         </DialogActions>
       </Dialog>
       {/* ----LOGIN MODAL END---- */}
@@ -202,7 +205,7 @@ function Signup(props) {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose2}>Cancel</Button>
-          <Button type="submit">Sign Up</Button>
+          <Button onClick={handleFormSubmit2} type="button">Sign Up</Button>
         </DialogActions>
       </Dialog>
       {/* ----SIGN UP MODAL END---- */}
