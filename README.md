@@ -42,6 +42,9 @@ This website was created so that the user can look for what kind of alcholic dri
 
 - Deliver/Shop section contract with Postmates or Total Wines were if the user needs alcohol or ingedients they will deliver it to your house with memembership required.
 
+# Google slides:
+
+https://docs.google.com/presentation/d/1enqm1EtBROU5D81BfdPa3w0SXmxFV3SVkXnyx9Wydx0/edit#slide=id.p
 
 # GitHub:
 
