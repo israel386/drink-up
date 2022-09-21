@@ -5,8 +5,8 @@ db.once('open', async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: 'Tequila' },
     { name: 'Rum' },
+    { name: 'Tequila' },
     { name: 'Vodka' }
   ]);
 
@@ -19,35 +19,35 @@ db.once('open', async () => {
       name: 'Classic Daiquiri',
       description:
         'White rum, lime, simple syrup',
-      image: '',
+      image: 'Daiquiri.png',
       category: categories[0]._id
     },
     {
       name: 'Classic Mojito',
       description:
         'White rum, simple syrup, lime, mint, soda water',
-      image: '',
+      image: 'Mojito.png',
       category: categories[0]._id
     },
     {
       name: 'Classic Piña Colada',
       description:
         'Aged rum, frozen pineapple, pineapple juice, lime juice, cream of coconut, ice',
-      image: '',
+      image: 'colada.png',
       category: categories[0]._id
     },
     {
       name: 'Dark and Stormy cocktail',
       description:
         'Dark rum, ginger beer, lime wedge',
-      image: '',
+      image: 'DarkStormy.png',
       category: categories[0]._id
     },
     {
       name: 'Hurricane Cocktail',
       description:
         'Light rum, dark rum, passion fruit syrup, orange juice, lime juice, grenadine',
-      image: '',
+      image: 'Hurricane_Cocktail.png',
       category: categories[0]._id
     },
     {
@@ -89,35 +89,35 @@ db.once('open', async () => {
       name: 'Gimlet',
       description:
         'Gin, lime juice, simple syrup',
-      image: '',
+      image: 'Gimlet.png',
       category: categories[2]._id
     },
     {
       name: 'Cosmopolitan',
       description:
         'Vodka, 100% cranberry juice, lemon juice, Cointreau, simple syrup',
-      image: '',
+      image: 'Cosmopolitan.png',
       category: categories[2]._id
     },
     {
       name: 'Vodka Sour',
       description:
         'Vodka, lemon juice, simple syrup, Angostura bitters, egg white',
-      image: '',
+      image: 'Vodka_Sour.png',
       category: categories[2]._id
     },
     {
       name: 'White Russian',
       description:
         'Vodka, Kahlua, cream',
-      image: '',
+      image: 'White_Russian.png',
       category: categories[2]._id
     },
     {
       name: 'Collins',
       description:
         'Vodka, lemon juice, simple syrup, soda water',
-      image: '',
+      image: 'Collins.png',
       category: categories[2]._id
     }
 

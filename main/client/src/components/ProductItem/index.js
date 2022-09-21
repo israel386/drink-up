@@ -67,7 +67,9 @@ function ProductItem(item) {
           </CardContent>
           <CardActions>
             <Checkbox icon={<FavoriteBorder />} onClick={addToCart} checkedIcon={<Favorite />} />
-            <Button size="small">Learn More</Button>
+            <Link to={`/products/${_id}`}>
+              <Button size="small"  >Learn More</Button>
+            </Link>
           </CardActions>
         </Card>
       </Grid>
