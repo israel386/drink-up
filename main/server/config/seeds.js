@@ -21,70 +21,70 @@ db.once('open', async () => {
       description:
         'White rum, lime, simple syrup',
       image: 'Daiquiri.png',
-      category: categories[0]._id
+      category: categories[1]._id
     },
     {
       name: 'Classic Mojito',
       description:
         'White rum, simple syrup, lime, mint, soda water',
       image: 'Mojito.png',
-      category: categories[0]._id
+      category: categories[1]._id
     },
     {
       name: 'Classic Piña Colada',
       description:
         'Aged rum, frozen pineapple, pineapple juice, lime juice, cream of coconut, ice',
       image: 'Colada.png',
-      category: categories[0]._id
+      category: categories[1]._id
     },
     {
       name: 'Dark and Stormy cocktail',
       description:
         'Dark rum, ginger beer, lime wedge',
       image: 'Dark_Stormy.png',
-      category: categories[0]._id
+      category: categories[1]._id
     },
     {
       name: 'Hurricane Cocktail',
       description:
         'Light rum, dark rum, passion fruit syrup, orange juice, lime juice, grenadine',
       image: 'Hurricane.png',
-      category: categories[0]._id
+      category: categories[1]._id
     },
     {
       name: 'Paloma',
       description:
         'Tequila, grapefruit, lime, simple syrup, soda water',
       image: 'Paloma.png',
-      category: categories[1]._id
+      category: categories[0]._id
     },
     {
       name: 'Tequila Sour',
       description:
         'Tequila, lemon juice, lime juice, simple syrup, bitters, egg white',
       image: 'TequilaSour.png',
-      category: categories[1]._id
+      category: categories[0]._id
     },
     {
       name: 'Mexican Mule',
       description:
         'Tequila, lime juice, ginger beer',
       image: 'MexicanMule.png',
-      category: categories[1]._id
+      category: categories[0]._id
     },
     {
       name: 'Tequila Sunrise',
       description:
         'Tequila, orange juice, grenadine',
       image: 'tequilaSunrise.png',
-      category: categories[1]._id
+      category: categories[0]._id
     },
     {
       name: 'Bloody Maria',
       description:
         'Tequila, lemon, tomato juice, horseradish, Tabasco, Worcestershire, celery salt',
       image: 'BloodyMaria.png',
-      category: categories[1]._id
+      category: categories[0]._id
     },
     {
       name: 'Gimlet',
