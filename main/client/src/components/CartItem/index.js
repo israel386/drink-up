@@ -2,6 +2,7 @@ import React from 'react';
 import { useStoreContext } from "../../utils/GlobalState";
 import { REMOVE_FROM_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
+import { Typography, Grid} from '@mui/material';
 
 const CartItem = ({ item }) => {
 
@@ -37,26 +38,31 @@ const CartItem = ({ item }) => {
   }
 
   return (
-    <div className="flex-row">
+    <Grid container direction="column"
+    justifyContent="center"
+    alignItems="center">
       <div>
         <img
+          id="drawerImage"
           src={`/images/${item.image}`}
           alt=""
+
         />
       </div>
       <div>
-        <div>{item.name}</div>
+        <Typography>{item.name}</Typography>
         <div>
-          <span
+          <Typography
+            color='red'
             role="img"
             aria-label="trash"
             onClick={() => removeFromCart(item)}
           >
             Remove item
-          </span>
+          </Typography>
         </div>
       </div>
-    </div>
+    </Grid>
   );
 }
 

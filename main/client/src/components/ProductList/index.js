@@ -46,7 +46,6 @@ function ProductList() {
 
   return (
     <div className="my-2">
-      <h2>Our Products:</h2>
       {state.products.length ? (
         <div className="flex-row">
           <Grid container spacing={2} justifyContent="center" alignItems="center">

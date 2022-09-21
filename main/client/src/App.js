@@ -102,6 +102,10 @@ function App() {
             {/* <Nav /> */}
             <Routes>
               <Route 
+                path="/signup" 
+                element={<Signup />} 
+              />
+              <Route 
                 path="/" 
                 element={<Home />} 
               />
@@ -109,10 +113,7 @@ function App() {
                 path="/login" 
                 element={<Login />} 
               />
-              <Route 
-                path="/signup" 
-                element={<Signup />} 
-              />
+              
               <Route 
                 path="/success" 
                 element={<Success />} 

@@ -43,11 +43,10 @@ function CategoryMenu() {
   };
 
   return (
-     <Grid container direction="row" justifyContent="center" alignItems="center">
-       <Typography>Choose a Category</Typography>
+     <Grid container direction="row" justifyContent="center" alignItems="center" marginBottom={2}>
             {/* ADDS WHATEVER YOU ADD INTO "CATERGORIES" ARRAY */}
         {categories.map((item) => (
-        <Button variant="contained" color="secondaryVar" sx={{m:2}} key={item._id} onClick={() => {
+        <Button variant="contained" size="large" color="secondaryVar" sx={{m:2}} key={item._id} onClick={() => {
           handleClick(item._id);}} > {item.name} </Button>
         ))}
      </Grid>

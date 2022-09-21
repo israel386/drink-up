@@ -88,7 +88,7 @@ function Detail() {
           <Link to="/">← Back to Products</Link>
 
           <h2>{currentProduct.name}</h2>
-          <h4>Ingrediants</h4>
+          <h4>Ingredients</h4>
           <p>{currentProduct.description}</p>
 
           <p>

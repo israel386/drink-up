@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { pluralize } from "../../utils/helpers"
+
 import { useStoreContext } from "../../utils/GlobalState";
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
 import { Grid, Button, Card, CardContent, CardActions, Typography, CardMedia } from '@mui/material'
-// import { Container } from '@mui/system';
+
 import Checkbox from '@mui/material/Checkbox';
 import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
 import Favorite from '@mui/icons-material/Favorite';
@@ -17,8 +17,6 @@ function ProductItem(item) {
     image,
     name,
     _id,
-    price,
-    quantity
   } = item;
 
   const { cart } = state
