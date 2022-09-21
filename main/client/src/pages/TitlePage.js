@@ -1,8 +1,12 @@
+// PAGE NOT USED*******************************
+
+
+
+
 import React  from 'react';
 import { useState } from 'react';
 import {useNavigate} from 'react-router-dom'
 import { Button, Grid, Typography } from '@mui/material'
-// import { Box, Stack } from '@mui/system';
 import TextField from '@mui/material/TextField';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
@@ -29,16 +33,7 @@ const TitlePage = () => {
   const handlePasswordInputChange = (event) => {
     setValues({...setValues, password: event.target.value})
   }
-  // SUBMIT ALERT
-  // const [submitted, setSubmitted] = useState(false)
-
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   setSubmitted(true)
-  // }
-  // ----onSubmit={handleSubmit}----
-  // LOGIN END----------
-
+  
   // ---- OPEN=LOGIN & OPEN2=SIGNUP----
   const [open,setOpen] = useState(false);
   const [open2,setOpen2] = useState(false);
@@ -96,7 +91,7 @@ const TitlePage = () => {
             fullWidth
             variant="standard"
           />
-          <Typography color='error' variant='inherit' component='span'>Please Enter Email</Typography>
+          {/* <Typography color='error' variant='inherit' component='span'>Please Enter Email</Typography> */}
           <TextField
             autoFocus
             margin="dense"
