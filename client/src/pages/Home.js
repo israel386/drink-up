@@ -12,10 +12,10 @@ import Nav from '../components/Nav/index';
 const Home = () => {
   return (
     <div className="container">
-      <Nav/>
-      <CategoryMenu/>
-      <ProductList/>
-      <Cart/>
+      <Nav />
+      <Cart />
+      <CategoryMenu />
+      <ProductList />
     </div>
   );
 };
